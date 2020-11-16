@@ -1,0 +1,141 @@
+/*CSS SLEP*/
+/* STAYS THE SAME FOR ALL PAGES start */
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei');
+body{
+    font-family: 'ZCOOL XiaoWei', serif;
+    font-weight: 600px;
+    width: 100%;
+    height: 100%;
+    margin:0px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, p{
+    font-family: 'ZCOOL XiaoWei', serif;
+}
+
+h1 {
+    text-decoration-color: black;
+    font-size: 40px;
+    padding-left:30px;
+}
+
+p {
+  letter-spacing: 0.3px;
+  font-size: 17px;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+h2 {
+    text-decoration: none;
+    font-size: 25px;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+h3 {
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.sidebar {
+  width: 230px;
+  top:0;
+  left: 0;
+  padding: 5px 10px 5px 10px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  text-align: center;  
+}
+
+.button{
+  display: block;
+  background-color: #9C1A6A;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 10px;
+  margin-top:10px;
+  margin-bottom:10px;
+  text-decoration: none;
+  font-size: 18px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #f1f1f1;
+  color: #691247;
+  font-weight: 700px;
+}
+
+main {
+  margin-left: 220px;
+  overflow: none;
+}
+
+footer {
+  padding:20px;
+  padding-left:230px;
+  background-color: #33475b;
+  color: #fff;
+  left: 0;
+  bottom: 0;
+  width:100%;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width:100% !important;
+    max-height:600px !important;
+    position:relative !important;
+  }
+  main {
+    margin-left: 10px;
+  }
+  .button{
+    width:100%;
+    text-align: center;
+  }
+  footer {
+    padding-left: 0px;
+  }
+}
+
+/* STAYS THE SAME FOR ALL PAGES end */
+
+@media screen and (max-width: 700px) {
+    #sleppreview {
+    max-width: 100%;
+  }
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#sleppreview {
+  width:640px;
+  height: 700px;
+}
